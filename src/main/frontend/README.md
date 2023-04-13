@@ -1,6 +1,8 @@
-# Getting Started with Create React App
+# Reference links
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### Styles Components
+
+[styled-components tutorial](https://dev.to/elijahtrillionz/complete-guide-on-how-to-use-styled-components-in-react-360c)
 
 ## Available Scripts
 

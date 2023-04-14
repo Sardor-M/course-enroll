@@ -1,17 +1,23 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import styled from "styled-components";
 import LoginPage from "./components/views/LoginPage/LoginPage";
-import { Routes, Route } from "react-router-dom";
+
 import MainPage from "./components/views/MainPage/MainPage";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import ReactModal from "react-modal";
+
+ReactModal.setAppElement("#root");
 
 function App() {
   return (
     <Wrapper>
-      <Routes>
-        <Route path="/" element={<LoginPage />} />
-        <Route path="/home" element={<MainPage />} />
-      </Routes>
+      <Router>
+        <Routes>
+          <Route path="/" element={<LoginPage />} />
+          <Route path="/home" element={<MainPage />} />
+        </Routes>
+      </Router>
     </Wrapper>
   );
 }

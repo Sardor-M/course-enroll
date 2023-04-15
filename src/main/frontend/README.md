@@ -4,6 +4,10 @@
 
 [styled-components tutorial](https://dev.to/elijahtrillionz/complete-guide-on-how-to-use-styled-components-in-react-360c)
 
+### State Managament
+
+[Recoil](https://recoiljs.org/docs/introduction/installation)
+
 ## Available Scripts
 
 In the project directory, you can run:

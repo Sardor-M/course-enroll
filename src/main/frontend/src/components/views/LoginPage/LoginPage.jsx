@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { NotificationManager } from "react-notifications";
 import { useResetRecoilState } from "recoil";
 import { currentErrorState } from "../../recoil/currentStates";
+import { GrLogin } from "react-icons/gr";
 
 function LoginPage() {
   const setCurrentUserErrorG = useResetRecoilState(currentErrorState);
@@ -38,13 +39,13 @@ function LoginPage() {
 
   return (
     <Wrapper>
-      <P>Login Page</P>
+      <ImgLogo src="assets/Enedge2.png" alt="Ededge Logo" />
       <Form>
         <IdPwDiv>
           <InputId
             id="login_id"
             type="text"
-            placeholder="Input your ID."
+            placeholder="Input your ID"
             value={userId}
             onChange={handleInputId}
             onKeyDown={onEnterPress}
@@ -53,7 +54,7 @@ function LoginPage() {
             <InputPw
               id="login_pw"
               type="password"
-              placeholder="Input your PW."
+              placeholder="Input your PW"
               value={userPw}
               onChange={handleInputPw}
               onKeyDown={onEnterPress}
@@ -79,6 +80,13 @@ const Wrapper = styled.div`
   align-items: center;
 `;
 
+const ImgLogo = styled.img`
+  width: 10%;
+  height 10%;
+  margin: 0 auto;
+  min-width: 150px;
+`;
+
 const P = styled.p`
   padding: 0;
   color: #313131;
@@ -88,22 +96,14 @@ const P = styled.p`
   margin: 0 auto;
 `;
 
-// const Image = styled.img`
-//   width: 100%;
-//   height: 100%;
-//   object-fit: cover;
-//   border-radius: 50%;
-//   margin: 0 auto;
-//   display: block;
-// `;
-
 const Form = styled.form`
   display: flex;
-  flex-direction: column;
-  width: 20%;
-  min-width: 140px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  min-width: 300px;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #f4f4f4;
 `;
 const IdPwDiv = styled.div`
   display: flex;
@@ -186,7 +186,7 @@ const Button = styled.button`
   }
 `;
 
-const ButtonImg = styled(`img`)`
+const ButtonImg = styled(GrLogin)`
   height: 62%;
   width: auto;
   min-height: 15px;

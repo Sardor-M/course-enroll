@@ -6,19 +6,23 @@ import LoginPage from "./components/views/LoginPage/LoginPage";
 import MainPage from "./components/views/MainPage/MainPage";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import ReactModal from "react-modal";
+import { CSSReset, ColorModeProvider } from "@chakra-ui/react";
 
 ReactModal.setAppElement("#root");
 
 function App() {
   return (
-    <Wrapper>
-      <Router>
-        <Routes>
-          <Route path="/" element={<LoginPage />} />
-          <Route path="/home" element={<MainPage />} />
-        </Routes>
-      </Router>
-    </Wrapper>
+    <ColorModeProvider>
+      <CSSReset />
+      <Wrapper>
+        <Router>
+          <Routes>
+            <Route path="/" element={<LoginPage />} />
+            <Route path="/home" element={<MainPage />} />
+          </Routes>
+        </Router>
+      </Wrapper>
+    </ColorModeProvider>
   );
 }
 

@@ -2,5 +2,18 @@
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
     "config:base"
+  ],
+   "packageRules": [
+    {
+      "matchPackageNames": ["org.springframework.boot"],
+      "matchPackageNames": ["framer-motion"]
+      "schedule": ["after 9pm on sunday"]
+    }
   ]
 }
+
+ 
+
+
+
+

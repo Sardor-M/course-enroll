@@ -6,7 +6,7 @@
    "packageRules": [
     {
       "matchPackageNames": ["org.springframework.boot"],
-      "matchPackageNames": ["framer-motion"]
+      "matchPackageNames": ["framer-motion"],
       "schedule": ["after 9pm on sunday"]
     }
   ]

@@ -6,7 +6,7 @@ import { StyledHomeButton } from "./StyledHomeButton";
 import { StyledMenuButton } from "./StyledMenuButton";
 
 function MenuButton() {
-  const serverChecks = useRecoilValue(serverCheckState);
+  const serverCheck = useRecoilValue(serverCheckState);
 
   function fillzero(width, time) {
     const str = "" + time;
@@ -19,7 +19,7 @@ function MenuButton() {
         <StyledHomeButton></StyledHomeButton>
         <StyledMenuButton></StyledMenuButton>
         <ServerCheck>
-          {fillzero(2, serverChecks.hour)}:{fillzero(2, serverChecks.minute)}:
+          {fillzero(2, serverCheck.hour)}:{fillzero(2, serverCheck.minute)}:
         </ServerCheck>
       </Menubar>
     </Wrapper>

@@ -1,13 +1,8 @@
 import { atom } from "recoil";
 
-export const currentPageState = atom({
-  key: "currentPaeState",
-  defualt: "",
-});
-
 export const currentErrorState = atom({
-  key: "currentErrorState",
-  default: false,
+  key: "currentError",
+  defualt: ["", false],
 });
 
 export const registerSwitchState = atom({

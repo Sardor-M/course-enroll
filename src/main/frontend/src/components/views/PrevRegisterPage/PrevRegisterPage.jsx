@@ -1,7 +1,9 @@
-import React from "react";
+import styled from "styled-components";
 
-function PrevRegisterPage() {
-  return <div>PrevRegisterPage</div>;
+function PrevRegisterPage(props) {
+  return <D></D>;
 }
 
 export default PrevRegisterPage;
+
+const D = styled.div``;

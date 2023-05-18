@@ -3,7 +3,7 @@
   "extends": ["config:base"],
   "packageRules": [
     {
-      "matchPackageName": [
+      "matchPackageNames": [
         "org.springframework.boot",
         "reactstrap",
         "framer-motion",

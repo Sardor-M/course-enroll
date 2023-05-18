@@ -1,19 +1,20 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
-    "config:base"
-  ],
-   "packageRules": [
+  "extends": ["config:base"],
+  "packageRules": [
     {
-      "matchPackageNames": ["org.springframework.boot"],
-      "matchPackageNames": ["framer-motion"],
+      "matchPackageName": [
+        "org.springframework.boot",
+        "reactstrap",
+        "framer-motion",
+        "swiper",
+        "chakra-ui",
+        "react-router-dom"
+      ],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "dependencies",
+      "automerge": true,
       "schedule": ["after 9pm on sunday"]
     }
   ]
 }
-
- 
-
-
-
-

@@ -29,7 +29,7 @@
     "reactstrap": "^9.1.9",
     "recoil": "^0.7.7",
     "styled-components": "^6.0.0",
-    "swiper": "^9.2.2",
+    "swiper": "^10.0.0",
     "web-vitals": "^3.0.0"
   },
   "scripts": {

@@ -28,7 +28,7 @@
     "react-scripts": "5.0.1",
     "reactstrap": "^9.1.9",
     "recoil": "^0.7.7",
-    "styled-components": "^5.3.9",
+    "styled-components": "^6.0.0",
     "swiper": "^9.2.2",
     "web-vitals": "^3.0.0"
   },
